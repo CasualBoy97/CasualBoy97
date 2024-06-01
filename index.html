@@ -7,23 +7,38 @@
     <title>FSC cafol</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <table>
-        <tr>
-            <th>Animals</th>
-            <th>Size</th>
-            <th>Likeness</th>
-        </tr>
-        <tr>
-            <td>Trash Panda</td>
-            <td>schmol</td>
-            <td>cuteness overload</td>
-        </tr>
-        <tr>
-            <td>Parrot</td>
-            <td>even schmoler</td>
-            <td>funny thingies</td>
-        </tr>
-    </table>
+    <div class="main">
+        <h3>Enter your login credentials</h3>
+        <form action="">
+            <label for="first">
+                  Username:
+              </label>
+            <input type="text" 
+                   id="first"
+                   name="first" 
+                   placeholder="Enter your Username" required>
+
+            <label for="password">
+                  Password:
+              </label>
+            <input type="password"
+                   id="password" 
+                   name="password" 
+                   placeholder="Enter your Password" required>
+
+            <div class="wrap">
+                <button type="submit"
+                        onclick="solve()">
+                    Submit
+                </button>
+            </div>
+        </form>
+        <p>Not registered? 
+              <a href="#" 
+               style="text-decoration: none;">
+                Create an account
+            </a>
+        </p>
+    </div>
 </body>
 </html>
